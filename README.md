@@ -37,15 +37,13 @@ npm run {script}
 # Пример: npm run build
 ```
 
-## Создание Бота и Мини-приложения
+## Создание бота и мини-приложения
 
 Прежде чем вы начнёте, у вас уже должен быть создан Телеграм Бот. Здесь [исчерпывающее руководство](https://docs.telegram-mini-apps.com/platform/creating-new-app) как это сделать.
 
 ## Запуск
 
-Несмотря на то, что мини-приложения предназначены для открытия
-в [приложениях Telegram](https://docs.telegram-mini-apps.com/platform/about#supported-applications),
-вы все равно можете разрабатывать и тестировать их за пределами Telegram.
+Несмотря на то, что мини-приложения предназначены для открытия в [приложениях Telegram](https://docs.telegram-mini-apps.com/platform/about#supported-applications), вы все равно можете разрабатывать и тестировать их за пределами Telegram.
 
 Чтобы запустить приложение в режиме разработки, используйте скрипт `dev`:
 
@@ -65,39 +63,27 @@ VITE v5.2.12  ready in 237 ms
 ➜  press h + enter to show help
 ```
 
-Здесь вы можете увидеть ссылку `Local`, доступную локально, и ссылку `Network`, доступную для всех
-устройств в той же сети, что и текущее устройство.
+Здесь вы можете увидеть ссылку `Local`, доступную локально, и ссылку `Network`, доступную для всех устройств в той же сети, что и текущее устройство.
 
-Чтобы просмотреть приложение, вам необходимо открыть ссылку `Local`
-(в данном примере `http://localhost:5173/reactjs-template`) в вашем браузере:
+Чтобы просмотреть приложение, вам необходимо открыть ссылку `Local` (в данном примере `http://localhost:5173/reactjs-template`) в вашем браузере:
 
 ![Приложение](assets/application.png)
 
-It is important to note that some libraries in this template, such as `@telegram-apps/sdk`, are not
-intended for use outside of Telegram.
+Важно отметить, что некоторые библиотеки в этом шаблоне, такие как `@telegram-apps/sdk`, не предназначены для использования за пределами Telegram.
 
-Nevertheless, they appear to function properly. This is because the `src/mockEnv.ts` file, which is
-imported in the application's entry point (`src/index.ts`), employs the `mockTelegramEnv` function
-to simulate the Telegram environment. This trick convinces the application that it is running in a
-Telegram-based environment. Therefore, be cautious not to use this function in production mode
-unless you fully understand its implications.
+Тем не менее, они, по-видимому, функционируют должным образом. Это связано с тем, что файл `src/mock Env.ts`, который импортируется в точку входа приложения (`src/index.ts`), использует функцию `mockTelegramEnv` для имитации среды Telegram. Этот трюк убеждает приложение в том, что оно запущено в среде Telegram. Поэтому будьте осторожны и не используйте эту функцию в рабочем режиме, если вы полностью не понимаете ее последствий.
 
-### Run Inside Telegram
+### Запуск внтури Telegram
 
-Although it is possible to run the application outside of Telegram, it is recommended to develop it
-within Telegram for the most accurate representation of its real-world functionality.
+Несмотря на то, что приложение можно запускать и за пределами Telegram, рекомендуется разрабатывать его внутри Telegram для наиболее точного представления его реальной функциональности.
 
-To run the application inside Telegram, [@BotFather](https://t.me/botfather) requires an HTTPS link.
+Чтобы запустить приложение внутри Telegram, [@BotFather](https://t.me/botfather) требуется наличие HTTPS-ссылки.
 
-This template already provides a solution.
+Этот шаблон уже предоставляет решение.
 
-Navigate to the `vite.config.ts` file and uncomment the usage of the `basicSsl` function. This
-function utilizes
-the [@vitejs/plugin-basic-ssl](https://www.npmjs.com/package/@vitejs/plugin-basic-ssl) plugin, which
-enables the creation of an HTTPS link. Note that this plugin generates a self-signed certificate,
-which browsers will recognize as unsafe, resulting in a warning when accessing the app.
+Перейдите к файлу `video.config.ts` и раскомментируйте использование функции `basic Ssl`. Эта функция использует плагин [@vitejs/plugin-basic-ssl](https://www.npmjs.com/package/@vitejs/plugin-basic-ssl), который позволяет создавать HTTPS-ссылку. Обратите внимание, что этот плагин генерирует самозаверяющий сертификат, который браузеры распознают как небезопасный, что приводит к выдаче предупреждения при доступе к приложению.
 
-After uncommenting the function, run the `dev` script again and observe the output in your terminal:
+После раскомментирования функции снова запустите скрипт `dev` и понаблюдайте за выводом в вашем терминале:
 
 ```bash
 VITE v5.2.12  ready in 265 ms
@@ -109,13 +95,11 @@ VITE v5.2.12  ready in 265 ms
 ➜  press h + enter to show help
 ```
 
-Visiting the `Local` link (`https://localhost:5173/reactjs-template` in this example) in your
-browser, you will see the following warning:
+Перейдя по ссылке `Local` (в данном примере `https://localhost:5173/reactjs-template`) в своем браузере, вы увидите следующее предупреждение:
 
 ![SSL Warning](assets/ssl-warning.png)
 
-This browser warning is normal and can be safely ignored as long as the site is secure. Click
-the `Proceed to localhost (unsafe)` button to continue and view the application.
+This browser warning is normal and can be safely ignored as long as the site is secure. Click the `Proceed to localhost (unsafe)` button to continue and view the application.
 
 Once the application is displayed correctly, submit one of the `Network` links as the Mini App link
 to [@BotFather](https://t.me/botfather). Then, navigate
