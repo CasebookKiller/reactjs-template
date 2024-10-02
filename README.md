@@ -65,13 +65,13 @@ VITE v5.2.12  ready in 237 ms
 ➜  press h + enter to show help
 ```
 
-Here, you can see the `Local` link, available locally, and `Network` links accessible to all
-devices in the same network with the current device.
+Здесь вы можете увидеть ссылку `Local`, доступную локально, и ссылку `Network`, доступную для всех
+устройств в той же сети, что и текущее устройство.
 
-To view the application, you need to open the `Local`
-link (`http://localhost:5173/reactjs-template` in this example) in your browser:
+Чтобы просмотреть приложение, вам необходимо открыть ссылку `Local`
+(в данном примере `http://localhost:5173/reactjs-template`) в вашем браузере:
 
-![Application](assets/application.png)
+![Приложение](assets/application.png)
 
 It is important to note that some libraries in this template, such as `@telegram-apps/sdk`, are not
 intended for use outside of Telegram.
