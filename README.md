@@ -37,11 +37,9 @@ npm run {script}
 # Пример: npm run build
 ```
 
-## Create Bot and Mini App
+## Создайте Бот и Мини-приложение
 
-Before you start, make sure you have already created a Telegram Bot. Here is
-a [comprehensive guide](https://docs.telegram-mini-apps.com/platform/creating-new-app) on how to
-do it.
+Прежде чем вы начнёте, у вас уже должен быть создан Телеграм Бот. Здесь [исчерпывающее руководство](https://docs.telegram-mini-apps.com/platform/creating-new-app) как это сделать.
 
 ## Run
 
