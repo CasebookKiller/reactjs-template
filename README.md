@@ -12,10 +12,10 @@
 > Шаблон создан с использованием [npm](https://www.npmjs.com/). Поэтому требуется использовать
 > его и для этого проекта. Используя другие менеджеры пакетов, вы получите соответствующую ошибку.
 
-## Install Dependencies
+## Установка Зависимостей
 
-If you have just cloned this template, you should install the project dependencies using the
-command:
+Если вы только что клонировали этот шаблон, вам следует установить зависимости проекта с помощью команды:
+
 
 ```Bash
 npm install
