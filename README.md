@@ -21,11 +21,11 @@
 npm install
 ```
 
-## Scripts
+## Скрипты
 
-This project contains the following scripts:
+Этот проект содержит следующие скрипты:
 
-- `dev`. Runs the application in development mode.
+- `dev`. Запускает приложение в режиме разработки.
 - `build`. Builds the application for production.
 - `lint`. Runs [eslint](https://eslint.org/) to ensure the code quality meets the required
   standards.
