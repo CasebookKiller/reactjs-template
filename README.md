@@ -37,23 +37,23 @@ npm run {script}
 # Пример: npm run build
 ```
 
-## Создайте Бот и Мини-приложение
+## Создание Бота и Мини-приложения
 
 Прежде чем вы начнёте, у вас уже должен быть создан Телеграм Бот. Здесь [исчерпывающее руководство](https://docs.telegram-mini-apps.com/platform/creating-new-app) как это сделать.
 
-## Run
+## Запуск
 
-Although Mini Apps are designed to be opened
-within [Telegram applications](https://docs.telegram-mini-apps.com/platform/about#supported-applications),
-you can still develop and test them outside of Telegram during the development process.
+Несмотря на то, что мини-приложения предназначены для открытия
+в [приложениях Telegram](https://docs.telegram-mini-apps.com/platform/about#supported-applications),
+вы все равно можете разрабатывать и тестировать их за пределами Telegram.
 
-To run the application in the development mode, use the `dev` script:
+Чтобы запустить приложение в режиме разработки, используйте скрипт `dev`:
 
 ```bash
 npm run dev
 ```
 
-After this, you will see a similar message in your terminal:
+После этого вы увидите аналогичное сообщение в своем терминале:
 
 ```bash
 VITE v5.2.12  ready in 237 ms
