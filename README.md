@@ -99,19 +99,13 @@ VITE v5.2.12  ready in 265 ms
 
 ![SSL Warning](assets/ssl-warning.png)
 
-This browser warning is normal and can be safely ignored as long as the site is secure. Click the `Proceed to localhost (unsafe)` button to continue and view the application.
+Это обычное предупреждение браузера, и его можно спокойно игнорировать, пока сайт защищен. Нажмите кнопку `Перейти на локальный хостинг (небезопасный)`, чтобы продолжить и просмотреть приложение.
 
-Once the application is displayed correctly, submit one of the `Network` links as the Mini App link
-to [@BotFather](https://t.me/botfather). Then, navigate
-to [https://web.telegram.org/k/](https://web.telegram.org/k/), find your bot, and launch the
-Telegram Mini App. This approach provides the full development experience.
+Как только приложение отобразится правильно, отправьте одну из ссылок `Network` в качестве ссылки на мини-приложение по адресу [@BotFather](https://t.me/botfather). Затем перейдите по ссылке [https://web.telegram.org/k/](https://web.telegram.org/k/), найдите свой сайт и запустите мини-приложение Telegram. Такой подход обеспечивает полный опыт разработки.
 
-> **Important**
+> **Важно**
 >
-> Because we are using self-signed SSL certificates, the Android and iOS Telegram applications will
-> not be able to display the application. These operating systems enforce stricter security
-> measures, preventing the Mini App from loading. To address this issue, refer
-> to [this guide](https://docs.telegram-mini-apps.com/platform/getting-app-link#remote).
+> Поскольку мы используем самозаверяющие SSL-сертификаты, приложения Telegram для Android и iOS не смогут отображать приложение. В этих операционных системах применяются более строгие меры безопасности, что предотвращает загрузку мини-приложения. Чтобы устранить эту проблему, обратитесь к [этому руководству](https://docs.telegram-mini-apps.com/platform/getting-app-link#remote).
 
 ## Deploy
 
