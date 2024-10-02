@@ -26,16 +26,15 @@ npm install
 Этот проект содержит следующие скрипты:
 
 - `dev`. Запускает приложение в режиме разработки.
-- `build`. Builds the application for production.
-- `lint`. Runs [eslint](https://eslint.org/) to ensure the code quality meets the required
-  standards.
-- `deploy`. Deploys the application to GitHub Pages.
+- `build`. Создаёт рабочее приложение.
+- `lint`. Запускает [eslint](https://eslint.org/), чтобы убедиться, что качество кода соответствует требуемым стандартам.
+- `deploy`. Развертывает приложение на Deploys GitHub Pages.
 
-To run a script, use the `npm run` command:
+Для запуска скрипта используйте команду `npm run`:
 
 ```Bash
 npm run {script}
-# Example: npm run build
+# Пример: npm run build
 ```
 
 ## Create Bot and Mini App
