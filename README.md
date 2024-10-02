@@ -1,7 +1,6 @@
-# Telegram Mini Apps React Template
+# Шаблон Telegram Mini Apps на React
 
-This template demonstrates how developers can implement a single-page application on the Telegram
-Mini Apps platform using the following technologies and libraries:
+Этот шаблон демонстрирует, как разработчики могут реализовать одностраничное приложение на платформе Telegram Mini Apps, используя следующие технологии и библиотеки:
 
 - [React](https://react.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -10,8 +9,8 @@ Mini Apps platform using the following technologies and libraries:
 - [Telegram UI](https://github.com/Telegram-Mini-Apps/TelegramUI)
 - [Vite](https://vitejs.dev/)
 
-> The template was created using [npm](https://www.npmjs.com/). Therefore, it is required to use
-> it for this project as well. Using other package managers, you will receive a corresponding error.
+> Шаблон создан с использованием [npm](https://www.npmjs.com/). Поэтому требуется использовать
+> его и для этого проекта. Используя другие менеджеры пакетов, вы получите соответствующую ошибку.
 
 ## Install Dependencies
 
