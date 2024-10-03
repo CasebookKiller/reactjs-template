@@ -107,28 +107,22 @@ VITE v5.2.12  ready in 265 ms
 >
 > Поскольку мы используем самозаверяющие SSL-сертификаты, приложения Telegram для Android и iOS не смогут отображать приложение. В этих операционных системах применяются более строгие меры безопасности, что предотвращает загрузку мини-приложения. Чтобы устранить эту проблему, обратитесь к [этому руководству](https://docs.telegram-mini-apps.com/platform/getting-app-link#remote).
 
-## Deploy
+## Развёртывание
 
-This boilerplate uses GitHub Pages as the way to host the application externally. GitHub Pages
-provides a CDN which will let your users receive the application rapidly. Alternatively, you could
-use such services as [Heroku](https://www.heroku.com/) or [Vercel](https://vercel.com).
+В этом шаблоне для внешнего размещения приложения используются GitHub Pages. GitHub Pages предоставляет CDN, который позволит вашим пользователям быстро получать приложение. В качестве альтернативы вы можете воспользоваться такими сервисами, как [Heroku](https://www.heroku.com/) или [Vercel](https://vercel.com).
 
-### Manual Deployment
+### Ручное развёртывание
 
-This boilerplate uses the [gh-pages](https://www.npmjs.com/package/gh-pages) tool, which allows
-deploying your application right from your PC.
+В этом шаблоне используется инструмент [gh-pages](https://www.npmjs.com/package/gh-pages), который позволяет развернуть ваше приложение прямо с вашего ПК.
 
-#### Configuring
+#### Конфигурирование
 
-Before running the deployment process, ensure that you have done the following:
+Перед запуском процесса развертывания убедитесь, что вы выполнили следующие действия:
 
-1. Replaced the `homepage` value in `package.json`. The GitHub Pages deploy tool uses this value to
-   determine the related GitHub project.
-2. Replaced the `base` value in `vite.config.ts` and have set it to the name of your GitHub
-   repository. Vite will use this value when creating paths to static assets.
+1. Заменилb значение `homepage` d `package.json`. Инструмент развертывания страниц на GitHub использует это значение для определения соответствующего проекта на GitHub.
+2. Заменили значение `base` в `vite.config.ts` и присвоил ему имя вашего репозитория на GitHub. Vite будет использовать это значение при создании путей к статическим ресурсам.
 
-For instance, if your GitHub username is `telegram-mini-apps` and the repository name
-is `is-awesome`, the value in the `homepage` field should be the following:
+Например, если ваше имя пользователя на GitHub - `telegram-mini-apps`, а имя репозитория - `is-awesome`, значение в поле `homepage` должно быть следующим:
 
 ```json
 {
@@ -136,7 +130,7 @@ is `is-awesome`, the value in the `homepage` field should be the following:
 }
 ```
 
-And `vite.config.ts` should have this content:
+И `vite.config.ts` должен содержать следующее содержимое:
 
 ```ts
 export default defineConfig({
@@ -145,13 +139,12 @@ export default defineConfig({
 });
 ```
 
-You can find more information on configuring the deployment in the `gh-pages`
-[docs](https://github.com/tschaub/gh-pages?tab=readme-ov-file#github-pages-project-sites).
+You can find more information on configuring the deployment in the `gh-pages` [docs](https://github.com/tschaub/gh-pages?tab=readme-ov-file#github-pages-project-sites).
+Вы можете найти более подробную информацию о настройке развертывания c `gh-pages` в [docs](https://github.com/tschaub/gh-pages?tab=readme-ov-file#github-pages-project-sites).
 
-#### Before Deploying
+#### До развертывания
 
-Before deploying the application, make sure that you've built it and going to deploy the fresh
-static files:
+Before deploying the application, make sure that you've built it and going to deploy the fresh static files:
 
 ```bash
 npm run build
