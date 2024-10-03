@@ -166,31 +166,24 @@ https://telegram-mini-apps.github.io/is-awesome
 настройках репозитория GitHub и назовите ее `github-pages`. Затем добавьте ветку `master` в список ветвей
 развертывания.
 
-You can find the environment settings using this
-URL: `https://github.com/{username}/{repository}/settings/environments`.
+Вы можете найти настройки среды, используя этот URL-адрес: `https://github.com/{username}/{repository}/settings/environments`.
 
 ![img.png](.github/deployment-branches.png)
 
-In case, you don't want to do it automatically, or you don't use GitHub as the project codebase,
-remove the `.github` directory.
+Если вы не хотите делать это автоматически или не используете GitHub в качестве кодовой базы проекта, удалите каталог `.github`.
 
-### GitHub Web Interface
+### Веб-интерфейс GitHub
 
-Alternatively, developers can configure automatic deployment using the GitHub web interface. To do
-this, follow the link: `https://github.com/{username}/{repository}/settings/pages`.
+В качестве альтернативы разработчики могут настроить автоматическое развертывание с помощью веб-интерфейса GitHub. Для этого перейдите по ссылке: `https://github.com/{username}/{repository}/settings/pages`.
 
 ## TON Connect
 
-This boilerplate utilizes the [TON Connect](https://docs.ton.org/develop/dapps/ton-connect/overview)
-project to demonstrate how developers can integrate functionality related to TON cryptocurrency.
+В этом шаблоне используется проект [TO Connect](https://docs.ton.org/develop/apps/to-connect/overview), чтобы продемонстрировать, как разработчики могут интегрировать функциональность, связанную с криптовалютой TON.
 
-The TON Connect manifest used in this boilerplate is stored in the `public` folder, where all
-publicly accessible static files are located. Remember
-to [configure](https://docs.ton.org/develop/dapps/ton-connect/manifest) this file according to your
-project's information.
+Манифест ДЛЯ подключения, используемый в этом шаблоне, хранится в папке `public`, где находятся все общедоступные статические файлы. Не забудьте [configure](https://docs.ton.org/develop/apps/to-connect/manifest) этот файл в соответствии с информацией о вашем проекте.
 
-## Useful Links
+## Полезные ссылки
 
-- [Platform documentation](https://docs.telegram-mini-apps.com/)
-- [@telegram-apps/sdk-react documentation](https://docs.telegram-mini-apps.com/packages/telegram-apps-sdk-react)
-- [Telegram developers community chat](https://t.me/devs)
+- [Документация по платформе](https://docs.telegram-mini-apps.com/)
+- [Документация @telegram-apps/sdk-react](https://docs.telegram-mini-apps.com/packages/telegram-apps-sdk-react)
+- [Чат сообщества разработчиков Telegram](https://t.me/devs)
