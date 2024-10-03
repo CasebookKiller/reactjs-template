@@ -160,7 +160,7 @@ https://telegram-mini-apps.github.io/is-awesome
 
 ### Рабочий процесс GitHub (Workflow)
 
-To simplify the deployment process, this template includes a pre-configured [GitHub workflow](.github/workflows/github-pages-deploy.yml) that automatically deploys the project when changes are pushed to the `master` branch.
+Чтобы упростить процесс развертывания, этот шаблон включает предварительно настроенный [GitHub Workflow](.github/workflows/github-pages-deploy.yml), который автоматически развертывает проект, когда изменения передаются в ветку `master`.
 
 To enable this workflow, create a new environment (or edit the existing one) in the GitHub
 repository settings and name it `github-pages`. Then, add the `master` branch to the list of
