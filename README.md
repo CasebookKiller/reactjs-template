@@ -139,32 +139,28 @@ export default defineConfig({
 });
 ```
 
-You can find more information on configuring the deployment in the `gh-pages` [docs](https://github.com/tschaub/gh-pages?tab=readme-ov-file#github-pages-project-sites).
 Вы можете найти более подробную информацию о настройке развертывания c `gh-pages` в [docs](https://github.com/tschaub/gh-pages?tab=readme-ov-file#github-pages-project-sites).
 
 #### До развертывания
 
-Before deploying the application, make sure that you've built it and going to deploy the fresh static files:
+Перед развертыванием приложения убедитесь, что вы его собрали, и приступайте к развертыванию новых статических файлов:
 
 ```bash
 npm run build
 ```
 
-Then, run the deployment process, using the `deploy` script:
+Затем запустите процесс развертывания, используя сценарий `deploy`:
 
 ```Bash
 npm run deploy
 ```
 
-After the deployment completed successfully, visit the page with data according to your
-username and repository name. Here is the page link example using the data mentioned above:
+После успешного завершения развертывания перейдите на страницу с данными, указанными в соответствии с вашим именем пользователя и названием хранилища. Вот пример ссылки на страницу с использованием указанных выше данных: 
 https://telegram-mini-apps.github.io/is-awesome
 
-### GitHub Workflow
+### Рабочий процесс GitHub (Workflow)
 
-To simplify the deployment process, this template includes a
-pre-configured [GitHub workflow](.github/workflows/github-pages-deploy.yml) that automatically
-deploys the project when changes are pushed to the `master` branch.
+To simplify the deployment process, this template includes a pre-configured [GitHub workflow](.github/workflows/github-pages-deploy.yml) that automatically deploys the project when changes are pushed to the `master` branch.
 
 To enable this workflow, create a new environment (or edit the existing one) in the GitHub
 repository settings and name it `github-pages`. Then, add the `master` branch to the list of
