@@ -162,9 +162,9 @@ https://telegram-mini-apps.github.io/is-awesome
 
 Чтобы упростить процесс развертывания, этот шаблон включает предварительно настроенный [GitHub Workflow](.github/workflows/github-pages-deploy.yml), который автоматически развертывает проект, когда изменения передаются в ветку `master`.
 
-To enable this workflow, create a new environment (or edit the existing one) in the GitHub
-repository settings and name it `github-pages`. Then, add the `master` branch to the list of
-deployment branches.
+Чтобы включить этот рабочий процесс, создайте новую среду (или отредактируйте существующую) в
+настройках репозитория GitHub и назовите ее `github-pages`. Затем добавьте ветку `master` в список ветвей
+развертывания.
 
 You can find the environment settings using this
 URL: `https://github.com/{username}/{repository}/settings/environments`.
