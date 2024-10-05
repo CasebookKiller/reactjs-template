@@ -37,13 +37,13 @@ export const App: FC = () => {
     return viewport && bindViewportCSSVars(viewport);
   }, [viewport]);
 
-  // Create a new application navigator and attach it to the browser history, so it could modify
-  // it and listen to its changes.
+  // Создайте новый навигатор приложений и прикрепите его к истории браузера, чтобы он мог изменять
+  // его и отслеживать изменения.
   const navigator = useMemo(() => initNavigator('app-navigation-state'), []);
   const [location, reactNavigator] = useIntegration(navigator);
 
-  // Don't forget to attach the navigator to allow it to control the BackButton state as well
-  // as browser history.
+  // Не забудьте подключить навигатор, чтобы он также мог управлять состоянием кнопки "Назад"
+  // в качестве истории браузера.
   useEffect(() => {
     navigator.attach();
     return () => navigator.detach();

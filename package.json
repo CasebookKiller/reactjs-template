@@ -32,6 +32,7 @@
     "@typescript-eslint/parser": "^7.8.0",
     "@vitejs/plugin-basic-ssl": "^1.1.0",
     "@vitejs/plugin-react-swc": "^3.6.0",
+    "antd": "^5.21.2",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.1",
     "gh-pages": "^6.1.1",

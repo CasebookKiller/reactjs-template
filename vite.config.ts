@@ -7,19 +7,19 @@ import react from '@vitejs/plugin-react-swc';
 export default defineConfig({
   base: '/reactjs-template',
   plugins: [
-    // Allows using React dev server along with building a React application with Vite.
+    // Позволяет использовать React dev server наряду с созданием приложения React с помощью Vite.
     // https://npmjs.com/package/@vitejs/plugin-react-swc
     react(),
-    // Allows using the compilerOptions.paths property in tsconfig.json.
+    // Позволяет использовать свойство compiler Options.paths в файле tsconfig.json.
     // https://www.npmjs.com/package/vite-tsconfig-paths
     tsconfigPaths(),
-    // Allows using self-signed certificates to run the dev server using HTTPS.
+    // Позволяет использовать самозаверяющие сертификаты для запуска сервера разработки по протоколу HTTPS.
     // https://www.npmjs.com/package/@vitejs/plugin-basic-ssl
     // basicSsl(),
   ],
   publicDir: './public',
   server: {
-    // Exposes your dev server and makes it accessible for the devices in the same network.
+    // Предоставляет доступ к вашему серверу разработки и делает его доступным для устройств в той же сети.
     host: true,
   },
 });

@@ -77,11 +77,11 @@ export const InitDataPage: FC = () => {
   if (!initDataRows) {
     return (
       <Placeholder
-        header="Oops"
-        description="Application was launched with missing init data"
+        header="Ой"
+        description="Приложение было запущено с отсутствующими данными инициализации"
       >
         <img
-          alt="Telegram sticker"
+          alt="Наклейка для телеграммы"
           src="https://xelene.me/telegram.gif"
           style={{ display: 'block', width: '144px', height: '144px' }}
         />
@@ -90,10 +90,10 @@ export const InitDataPage: FC = () => {
   }
   return (
     <List>
-      <DisplayData header={'Init Data'} rows={initDataRows}/>
-      {userRows && <DisplayData header={'User'} rows={userRows}/>}
-      {receiverRows && <DisplayData header={'Receiver'} rows={receiverRows}/>}
-      {chatRows && <DisplayData header={'Chat'} rows={chatRows}/>}
+      <DisplayData header={'Данные инициализации'} rows={initDataRows}/>
+      {userRows && <DisplayData header={'Пользователь'} rows={userRows}/>}
+      {receiverRows && <DisplayData header={'Получатель'} rows={receiverRows}/>}
+      {chatRows && <DisplayData header={'Чат'} rows={chatRows}/>}
     </List>
   );
 };

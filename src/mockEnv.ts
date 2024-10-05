@@ -1,20 +1,20 @@
 import { mockTelegramEnv, parseInitData, retrieveLaunchParams } from '@telegram-apps/sdk-react';
 
-// It is important, to mock the environment only for development purposes. When building the
-// application, import.meta.env.DEV will become false, and the code inside will be tree-shaken,
-// so you will not see it in your final bundle.
+// Важно, чтобы имитация среды выполнялась только в целях разработки. При сборке
+// приложения значение import.meta.env.DEV станет ложным, а код внутри будет изменен на древовидный,
+// поэтому вы не увидите его в своем окончательном пакете.
 if (import.meta.env.DEV) {
   let shouldMock: boolean;
 
-  // Try to extract launch parameters to check if the current environment is Telegram-based.
+  // Попытка извлечь параметры запуска, чтобы проверить, основана ли текущая среда на Telegram.
   try {
-    // If we are able to extract launch parameters, it means that we are already in the
-    // Telegram environment. So, there is no need to mock it.
+    // Если мы можем извлечь параметры запуска, это означает, что мы уже находимся в среде 
+    // Telegram. Таким образом, нет необходимости имитировать её.
     retrieveLaunchParams();
 
-    // We could previously mock the environment. In case we did, we should do it again. The reason
-    // is the page could be reloaded, and we should apply mock again, because mocking also
-    // enables modifying the window object.
+    // Ранее мы могли имитировать окружающую среду. В случае, если мы это сделали, мы должны сделать это снова.
+    // Потому что страница может быть перезагружена, и мы должны снова использовать имитацию, потому что имитация также
+    // позволяет изменять объект window.
     shouldMock = !!sessionStorage.getItem('____mocked');
   } catch (e) {
     shouldMock = true;
@@ -24,10 +24,10 @@ if (import.meta.env.DEV) {
     const initDataRaw = new URLSearchParams([
       ['user', JSON.stringify({
         id: 99281932,
-        first_name: 'Andrew',
-        last_name: 'Rogue',
-        username: 'rogue',
-        language_code: 'en',
+        first_name: 'Ivan',
+        last_name: 'Petrov',
+        username: 'petrov',
+        language_code: 'ru',
         is_premium: true,
         allows_write_to_pm: true,
       })],
@@ -62,7 +62,7 @@ if (import.meta.env.DEV) {
     sessionStorage.setItem('____mocked', '1');
 
     console.info(
-      'As long as the current environment was not considered as the Telegram-based one, it was mocked. Take a note, that you should not do it in production and current behavior is only specific to the development process. Environment mocking is also applied only in development mode. So, after building the application, you will not see this behavior and related warning, leading to crashing the application outside Telegram.',
+      'До тех пор, пока текущая среда не определяется как основанная на Telegram, она будет имитирована. Обратите внимание, что вы не должны делать этого в рабочей среде, а текущее поведение относится только к процессу разработки. Имитирование среды применяется только в режиме разработки. Таким образом, после создания приложения вы не увидите такого поведения и связанного с ним предупреждения, приводящего к сбою приложения вне Telegram.',
     );
   }
 }

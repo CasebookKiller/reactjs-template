@@ -28,7 +28,7 @@ export const TONConnectPage: FC = () => {
         description={
           <>
             <Text>
-              To display the data related to the TON Connect, it is required to connect your wallet
+              Для отображения данных, связанных с подключением, необходимо подключить свой кошелек
             </Text>
             <TonConnectButton className='ton-connect-page__button'/>
           </>
@@ -55,9 +55,9 @@ export const TONConnectPage: FC = () => {
           <Section>
             <Cell
               before={
-                <Avatar src={wallet.imageUrl} alt='Provider logo' width={60} height={60}/>
+                <Avatar src={wallet.imageUrl} alt='Логотип провайдера' width={60} height={60}/>
               }
-              after={<Navigation>About wallet</Navigation>}
+              after={<Navigation>О кошельке</Navigation>}
               subtitle={wallet.appName}
               onClick={(e) => {
                 e.preventDefault();
@@ -71,22 +71,22 @@ export const TONConnectPage: FC = () => {
         </>
       )}
       <DisplayData
-        header='Account'
+        header='Учетная запись'
         rows={[
-          { title: 'Address', value: address },
-          { title: 'Chain', value: chain },
-          { title: 'Public Key', value: publicKey },
+          { title: 'Адрес', value: address },
+          { title: 'Цепь', value: chain },
+          { title: 'Публичный ключ', value: publicKey },
         ]}
       />
       <DisplayData
-        header='Device'
+        header='Устройство'
         rows={[
-          { title: 'App Name', value: appName },
-          { title: 'App Version', value: appVersion },
-          { title: 'Max Protocol Version', value: maxProtocolVersion },
-          { title: 'Platform', value: platform },
+          { title: 'Наименование Приложения', value: appName },
+          { title: 'Версия Приложения', value: appVersion },
+          { title: 'Максимальная версия протокола', value: maxProtocolVersion },
+          { title: 'Платформа', value: platform },
           {
-            title: 'Features',
+            title: 'Особенности',
             value: features
               .map(f => typeof f === 'object' ? f.name : undefined)
               .filter(v => v)

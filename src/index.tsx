@@ -2,8 +2,8 @@ import ReactDOM from 'react-dom/client';
 
 import { Root } from '@/components/Root';
 
-// Uncomment this import in case, you would like to develop the application even outside
-// the Telegram application, just in your browser.
+// Раскомментируйте этот импорт на случай, если вы захотите разрабатывать приложение за пределами
+// приложения Telegram в вашем браузере.
 import './mockEnv.ts';
 
 import '@telegram-apps/telegram-ui/dist/styles.css';

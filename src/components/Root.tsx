@@ -7,7 +7,7 @@ import { ErrorBoundary } from '@/components/ErrorBoundary.tsx';
 
 const ErrorBoundaryError: FC<{ error: unknown }> = ({ error }) => (
   <div>
-    <p>An unhandled error occurred:</p>
+    <p>Произошла необработанная ошибка:</p>
     <blockquote>
       <code>
         {error instanceof Error
@@ -26,7 +26,7 @@ const Inner: FC = () => {
     return new URL('tonconnect-manifest.json', window.location.href).toString();
   }, []);
 
-  // Enable debug mode to see all the methods sent and events received.
+  // Включите режим отладки, чтобы просмотреть все отправленные методы и полученные события.
   useEffect(() => {
     if (debug) {
       import('eruda').then((lib) => lib.default.init());

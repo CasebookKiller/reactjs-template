@@ -26,10 +26,10 @@ export const DisplayData: FC<DisplayDataProps> = ({ header, rows }) => (
       let valueNode: ReactNode;
 
       if (item.value === undefined) {
-        valueNode = <i>empty</i>;
+        valueNode = <i>пусто</i>;
       } else {
         if ('type' in item) {
-          valueNode = <Link to={item.value}>Open</Link>;
+          valueNode = <Link to={item.value}>Открыть</Link>;
         } else if (typeof item.value === 'string') {
           valueNode = isRGB(item.value)
             ? <RGB color={item.value}/>
