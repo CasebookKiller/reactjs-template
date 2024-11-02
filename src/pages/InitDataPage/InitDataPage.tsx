@@ -1,5 +1,6 @@
 import { type FC, useMemo } from 'react';
-import { useInitData, useLaunchParams, type User } from '@telegram-apps/sdk-react';
+import { parseInitData } from '@telegram-apps/sdk';
+import { useLaunchParams, type User } from '@telegram-apps/sdk-react';
 import { List, Placeholder } from '@telegram-apps/telegram-ui';
 
 import { DisplayData, type DisplayDataRow } from '@/components/DisplayData/DisplayData.tsx';
@@ -20,13 +21,16 @@ function getUserRows(user: User): DisplayDataRow[] {
 }
 
 export const InitDataPage: FC = () => {
+  console.log('InitDataPage: ', window.location);
+  console.log('history:', history)
   const initDataRaw = useLaunchParams().initDataRaw;
-  const initData = useInitData();
+  const initData = parseInitData(initDataRaw);
 
   const initDataRows = useMemo<DisplayDataRow[] | undefined>(() => {
     if (!initData || !initDataRaw) {
       return;
     }
+    console.log(initData);
     const {
       hash,
       queryId,
@@ -35,14 +39,12 @@ export const InitDataPage: FC = () => {
       authDate,
       startParam,
       canSendAfter,
-      canSendAfterDate,
     } = initData;
     return [
       { title: 'raw', value: initDataRaw },
       { title: 'auth_date', value: authDate.toLocaleString() },
       { title: 'auth_date (raw)', value: authDate.getTime() / 1000 },
       { title: 'hash', value: hash },
-      { title: 'can_send_after', value: canSendAfterDate?.toISOString() },
       { title: 'can_send_after (raw)', value: canSendAfter },
       { title: 'query_id', value: queryId },
       { title: 'start_param', value: startParam },
@@ -81,7 +83,7 @@ export const InitDataPage: FC = () => {
         description="Приложение было запущено с отсутствующими данными инициализации"
       >
         <img
-          alt="Наклейка для телеграммы"
+          alt="Наклейка Telegram"
           src="https://xelene.me/telegram.gif"
           style={{ display: 'block', width: '144px', height: '144px' }}
         />

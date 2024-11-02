@@ -192,6 +192,13 @@ https://telegram-mini-apps.github.io/is-awesome
 
   На этом этапе я рекомендую изучить репозиторий GitHub. У него будет две ветки: `master` и `gh-pages`. Ветка `master` будет содержать исходный код приложения React, в то время как ветка `gh-pages` будет содержать распространяемую версию приложения React.
 
+  После обновления и для сохранения новой версии исходного кода используйте:
+
+  ```shell
+  $ git add .
+  $ git commit -m "Some text describing the update"
+  $ git push
+  ```
 
 ## TON Connect
 

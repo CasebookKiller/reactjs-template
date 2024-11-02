@@ -1,4 +1,8 @@
-import { classNames, useUtils } from '@telegram-apps/sdk-react';
+import { 
+  classNames,
+  //useUtils
+  openLink
+} from '@telegram-apps/sdk-react';
 import { type FC, type MouseEventHandler, useCallback } from 'react';
 import { Link as RouterLink, type LinkProps } from 'react-router-dom';
 
@@ -10,7 +14,7 @@ export const Link: FC<LinkProps> = ({
   to,
   ...rest
 }) => {
-  const utils = useUtils();
+  //const utils = useUtils();
 
   const onClick = useCallback<MouseEventHandler<HTMLAnchorElement>>((e) => {
     propsOnClick?.(e);
@@ -32,9 +36,9 @@ export const Link: FC<LinkProps> = ({
 
     if (isExternal) {
       e.preventDefault();
-      utils.openLink(targetUrl.toString());
+      openLink(targetUrl.toString());
     }
-  }, [to, propsOnClick, utils]);
+  }, [to, propsOnClick]);
 
   return (
     <RouterLink
