@@ -12,7 +12,7 @@ import {
 import { AppRoot } from '@telegram-apps/telegram-ui';
 import { type FC,
   useEffect,
-  useMemo
+//  useMemo
 } from 'react';
 import {
   HashRouter as Router,
@@ -132,6 +132,7 @@ export const App: FC = () => {
     >
       <Router>
         <BackButtonManipulator/>
+        <MainButtonManipulator/>
         <Routes>
           {routes.map((route) => <Route key={route.path} {...route} />)}
           <Route path='*' element={<Navigate to='/'/>}/>
