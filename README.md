@@ -1,4 +1,7 @@
 # Шаблон Telegram Mini Apps на React
+![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template%2Fraw%2Fmaster%2Fpackage.json&query=%24.version&prefix=%D0%B2%D0%B5%D1%80.%20&logo=telegram&logoColor=white&label=reactjs-template&color=orange&link=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template)
+![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template%2Fraw%2Fmaster%2Fpackage.json&query=%24.dependencies.react&prefix=%D0%B2%D0%B5%D1%80.%20&logo=react&logoColor=white&label=react&color=0277bd&link=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template)
+![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template%2Fraw%2Fmaster%2Fpackage.json&query=%24.dependencies.react-dom&prefix=%D0%B2%D0%B5%D1%80.%20&logo=react&logoColor=white&label=react-dom&color=0277bd&link=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template)
 
 Этот шаблон демонстрирует, как разработчики могут реализовать одностраничное приложение на платформе Telegram Mini Apps, используя следующие технологии и библиотеки:
 
