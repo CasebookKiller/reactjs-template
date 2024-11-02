@@ -56,7 +56,7 @@ if (import.meta.env.DEV) {
       },
       initData: parseInitData(initDataRaw),
       initDataRaw,
-      version: '7.2',
+      version: '7.10',
       platform: 'tdesktop',
     });
     sessionStorage.setItem('____mocked', '1');
