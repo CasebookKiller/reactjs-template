@@ -1,0 +1,43 @@
+.flex{
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+.flex-1 {
+	flex: 1 1 0%;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+}
+
+.flex-initial	{
+  flex: 0 1 auto;
+}
+
+.flex-none {
+  flex: none;
+}
+
+
+.flex-left-20 {
+  width: 20%;
+  text-align: left;
+}
+
+.flex-left-80 {
+  width: 80%;
+  text-align: left;
+}
+
+
+.flex-right-20 {
+  width: 20%;
+  text-align: right;
+}
+
+.flex-right-80 {
+  width: 80%;
+  text-align: right;
+}

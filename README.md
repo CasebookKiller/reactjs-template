@@ -1,16 +1,4 @@
 # Шаблон Telegram Mini Apps на React
-![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template%2Fraw%2Fmaster%2Fpackage.json&query=%24.version&prefix=%D0%B2%D0%B5%D1%80.%20&logo=telegram&logoColor=white&label=reactjs-template&color=orange&link=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template)
-![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template%2Fraw%2Fmaster%2Fpackage.json&query=%24.devDependencies.typescript&prefix=%D0%B2%D0%B5%D1%80.%20&logo=typescript&logoColor=white&label=typescript&color=3178C6&link=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template)
-![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template%2Fraw%2Fmaster%2Fpackage.json&query=%24.devDependencies.vite&prefix=%D0%B2%D0%B5%D1%80.%20&logo=vite&logoColor=white&label=vite&color=007782&link=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template)
-![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template%2Fraw%2Fmaster%2Fpackage.json&query=%24.dependencies.react&prefix=%D0%B2%D0%B5%D1%80.%20&logo=react&logoColor=white&label=react&color=0277bd&link=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template)
-![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template%2Fraw%2Fmaster%2Fpackage.json&query=%24.dependencies.react-dom&prefix=%D0%B2%D0%B5%D1%80.%20&logo=react&logoColor=white&label=react-dom&color=0277bd&link=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template)
-![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template%2Fraw%2Fmaster%2Fpackage.json&query=%24.dependencies.react-router-dom&prefix=%D0%B2%D0%B5%D1%80.%20&logo=react&logoColor=white&label=react-router-dom&color=0277bd&link=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template)
-![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template%2Fraw%2Fmaster%2Fpackage.json&query=%24.dependencies.react-bootstrap-icons&prefix=%D0%B2%D0%B5%D1%80.%20&logo=bootstrap&logoColor=white&label=react-bootstrap-icons&color=7952b3&link=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template)
-![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template%2Fraw%2Fmaster%2Fpackage.json&query=%24.dependencies.%40telegram-apps%2Fsdk&prefix=%D0%B2%D0%B5%D1%80.%20&logo=telegram&logoColor=white&label=%40telegram-apps%2Fsdk&color=24A1DE&link=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template)
-![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template%2Fraw%2Fmaster%2Fpackage.json&query=%24.dependencies.%40telegram-apps%2Fsdk-react&prefix=%D0%B2%D0%B5%D1%80.%20&logo=telegram&logoColor=white&label=%40telegram-apps%2Fsdk-react&color=24A1DE&link=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template)
-![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template%2Fraw%2Fmaster%2Fpackage.json&query=%24.dependencies.%40telegram-apps%2Ftelegram-ui&prefix=%D0%B2%D0%B5%D1%80.%20&logo=telegram&logoColor=white&label=%40telegram-apps%2Ftelegram-ui&color=24A1DE&link=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template)
-![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template%2Fraw%2Fmaster%2Fpackage.json&query=%24.dependencies.%40tonconnect%2Fui-react&prefix=%D0%B2%D0%B5%D1%80.%20&logo=ton&logoColor=white&label=%40tonconnect%2Fui-react&color=24A1DE&link=https%3A%2F%2Fgithub.com%2FCasebookKiller%2Freactjs-template)
-
 
 Этот шаблон демонстрирует, как разработчики могут реализовать одностраничное приложение на платформе Telegram Mini Apps, используя следующие технологии и библиотеки:
 
@@ -19,6 +7,7 @@
 - [TON Connect](https://docs.ton.org/develop/dapps/ton-connect/overview)
 - [@telegram-apps SDK](https://docs.telegram-mini-apps.com/packages/telegram-apps-sdk)
 - [Telegram UI](https://github.com/Telegram-Mini-Apps/TelegramUI)
+- [Supabase](https://supabase.com/)
 - [Vite](https://vitejs.dev/)
 
 > Шаблон создан с использованием [npm](https://www.npmjs.com/). Поэтому требуется использовать
@@ -53,9 +42,103 @@ npm run {script}
 
 Прежде чем вы начнёте, у вас уже должен быть создан Телеграм Бот. Здесь [исчерпывающее руководство](https://docs.telegram-mini-apps.com/platform/creating-new-app) как это сделать.
 
+В папке проекта создайте файл .env.local и добавьте в него переменную:
+
+```bash
+VITE_BOT_TOKEN='<ваш BOT_TOKEN>'
+```
+
+## Настройка Supabase
+
+### 1. Создание нового проекта Supabase
+
+Зарегистрируйтесь в Supabase - [https://app.supabase.com](https://app.supabase.com) и [https://supabase.com/dashboard/projects](создайте новый проект). Подождите пока база данных будет готова к использованию.
+
+### 2. Запуск "User Management" Quickstart (Быстрый запуск)
+
+Как только ваша база данных будет запущена, перейдите в `SQL Editor` вашего проекта. На странице `SQL editor` вставьте следующий код:
+
+```sql
+-- Create the table
+create table ids (
+  id bigint primary key generated always as identity,
+  tgid text not null,
+  created_at timestamp with time zone not null default now()
+);
+
+alter table ids enable row level security;
+```
+
+Сделайте данные в вашей таблице общедоступными, добавив политики RLS:
+```sql
+create policy "public can read ids"
+on public.ids
+for select to anon
+using (true);
+```
+
+```sql
+create policy "paublic can insert ids"
+on public.ids
+for insert to anon
+using (true)
+with check (true);
+```
+
+### 3. Создание TypeScript-типов для Supabase
+
+Для удобства работы с Supabase в TypeScript можно использовать типы, которые автоматически генерируются на основе вашей базы данных. Вы можете использовать [Supabase Types](https://supabase.com/docs/guides/api/rest/generating-types) для создания типов для вашей базы данных.
+
+### 4. Получение URL-адрес и Ключ
+
+Перейдите в настройки проекта (значок шестеренки), откройте вкладку API и найдите свой URL API и ключ `anon`, они понадобятся вам на следующем шаге.
+
+Ключ `anon` - это ваш API-ключ на стороне клиента. Он обеспечивает "анонимный доступ" к вашей базе данных до тех пор, пока пользователь не выполнит вход в систему. Как только пользователь выполнит вход, ключи будут заменены на собственный токен входа пользователя. Это обеспечивает защиту ваших данных на уровне строк. Подробнее об этом читайте [ниже](#postgres-row-level-security).
+
+![image](https://user-images.githubusercontent.com/10214025/88916245-528c2680-d298-11ea-8a71-708f93e1ce4f.png)
+
+**_ПРИМЕЧАНИЯ_**: Ключ `service_role` предоставляет полный доступ к вашим данным в обход любых политик безопасности. Эти ключи должны храниться в секрете и предназначены для использования в серверных средах и никогда - на клиенте или в браузере.
+
+### 5. Настройка секретов (и переменных среды)
+
+На предыдущих шагах вы создали проект Supabase с базой данных и таблицу `profiles`. Вы также получили URL-адрес и ключ для вашего проекта. Теперь они будут предоставлены в качестве конфигурации для проекта.
+
+Для развертывания в облаке: Создайте [зашифрованные секретные данные для вашего репозитория](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository), используя следующие имена:
+
+- `VITE_SUPABASE_URL` для URL вашего проекта.
+- `VITE_SUPABASE_ANON_KEY` для ключа `anon` вашего проекта.
+
+### 6. Отредактуируте SupabasePage.tsx
+
+В папке `src/pages/SupabasePage` отредактируйте файл `SupabasePage.tsx`.
+
 ## Запуск
 
 Несмотря на то, что мини-приложения предназначены для открытия в [приложениях Telegram](https://docs.telegram-mini-apps.com/platform/about#supported-applications), вы все равно можете разрабатывать и тестировать их за пределами Telegram.
+
+Перед запуском проекта в режиме разработки отредактируйте файл src/mockEnv.ts, для корректной работы лучше использовать данные настоящего пользователя.
+
+Для работы шаблона достаточно указать в нем ID пользователя, которого вы хотите использовать в приложении,  в переменной `VITE_MOCK_USER_ID` в файле `.env.local`.
+
+```ts
+  const initDataRaw = new URLSearchParams([
+    ['user', JSON.stringify({
+      id: import.meta.env.VITE_MOCK_USER_ID || 99281932,
+      first_name: 'Ivan',
+      last_name: 'Petrov',
+      username: 'petrov',
+      language_code: 'ru',
+      is_premium: true,
+      allows_write_to_pm: true,
+    })],
+    ['signature', 'wP0hiNsZtrjRu_f8IE9rbgjic-lnFm4MoSBPKhMvOtZgJDqA8SSQN421SsnqxQResAsZaShR4eUuL4WKUAQLCQ'],
+    ['hash', '89d6079ad6762351f38c6dbbc41bb53048019256a9443988af7a48bcad16ba31'],
+    ['auth_date', '1716922846'],
+    ['start_param', 'debug'],
+    ['chat_type', 'sender'],
+    ['chat_instance', '8428209589180549439'],
+  ]).toString();
+```
 
 Чтобы запустить приложение в режиме разработки, используйте скрипт `dev`:
 

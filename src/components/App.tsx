@@ -11,11 +11,12 @@ import {
 } from '@telegram-apps/sdk-react';
 import { AppRoot } from '@telegram-apps/telegram-ui';
 import { type FC,
+  startTransition,
   useEffect,
 //  useMemo
 } from 'react';
 import {
-  HashRouter as Router,
+  HashRouter,
   Navigate,
   Route,
   Routes,
@@ -124,20 +125,24 @@ export const App: FC = () => {
   viewport.mount();
 
   backButton.mount();
+  
+  startTransition(() => {
+    console.log('%cminiApp: %o', `color: cyan`, miniApp);
+  });
 
   return (
     <AppRoot
       appearance={miniApp.isDark() ? 'dark' : 'light'}
       platform={['macos', 'ios'].includes(lp.platform) ? 'ios' : 'base'}
     >
-      <Router>
+      <HashRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <BackButtonManipulator/>
         <MainButtonManipulator/>
         <Routes>
           {routes.map((route) => <Route key={route.path} {...route} />)}
           <Route path='*' element={<Navigate to='/'/>}/>
         </Routes>
-      </Router>
+      </HashRouter>
     </AppRoot>
   );
 };

@@ -35,6 +35,17 @@ export const IndexPage: FC = () => {
           <Cell subtitle='Информация о палитре приложений Telegram'>Параметры темы</Cell>
         </Link>
       </Section>
+      <Section
+        header='База данных и задачи'
+        footer='Этот раздел помогает разработчикам настроить подключение supabase к своему мини-приложению и организовать подписку на чаты и каналы'
+      >
+        <Link to='/supabase'>
+          <Cell subtitle='Идентификаторы пользователей приложения'>База данных</Cell>
+        </Link>
+        <Link to='/missions'>
+          <Cell subtitle='Задачи для пользователей, проверка подписки на чаты и каналы'>Задачи</Cell>
+        </Link>
+      </Section>
     </List>
   );
 };

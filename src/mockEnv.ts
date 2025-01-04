@@ -23,7 +23,7 @@ if (import.meta.env.DEV) {
   if (shouldMock) {
     const initDataRaw = new URLSearchParams([
       ['user', JSON.stringify({
-        id: 99281932,
+        id: import.meta.env.VITE_MOCK_USER_ID || 99281932,
         first_name: 'Ivan',
         last_name: 'Petrov',
         username: 'petrov',
@@ -31,6 +31,7 @@ if (import.meta.env.DEV) {
         is_premium: true,
         allows_write_to_pm: true,
       })],
+      ['signature', 'wP0hiNsZtrjRu_f8IE9rbgjic-lnFm4MoSBPKhMvOtZgJDqA8SSQN421SsnqxQResAsZaShR4eUuL4WKUAQLCQ'],
       ['hash', '89d6079ad6762351f38c6dbbc41bb53048019256a9443988af7a48bcad16ba31'],
       ['auth_date', '1716922846'],
       ['start_param', 'debug'],
